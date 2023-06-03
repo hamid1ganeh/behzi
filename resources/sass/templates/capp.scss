@@ -1,0 +1,160 @@
+// Fonts
+//@import url('https://nobaharishop.com/font/font.css');
+
+// Variables
+@import '../variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+  direction: rtl;
+  background-color: $body-bg;
+  font-family: 'IRANSansWeb';
+
+}
+a:hover{
+    text-decoration: none !important;
+}
+.border-right{
+  border-color:$light-grey !important;
+  @media (max-width: 980px) {
+    border-color: transparent !important;
+  }
+}
+header{
+  height:60px;
+  z-index: 8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.26);
+  .navbar-nav li a{
+    font-size: 17px !important;
+    :hover{
+      color:$blue !important
+    }
+  }
+}
+input[type=text]{
+  width: 100%;
+  height: 2.2rem;
+  border: none;
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 50px;
+  padding: 0 1rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightblue;
+  opacity: 1; /* Firefox */
+}
+.parent-height{
+  height:inherit !important;
+}
+.my-2-half{
+  margin-top: 0.8rem; margin-bottom: 0.8rem;
+}
+img[alt=search]{
+  left:0.6rem;
+}
+.hide-in-mobile{
+  @media(max-width: 980px){
+    display: none !important;
+  }
+}
+.show-in-mobile{
+  @media(max-width: 980px){
+    display: block !important;
+  }
+}
+.logo-container{
+  @media(max-width: 980px){
+    position: absolute;
+    width: 100% !important;
+  }
+}
+// header done
+.blur-bg {
+  overflow: hidden;
+  margin: 0;
+  min-height: 205px;
+  h1,span{
+    text-shadow: 0 0 3px black;
+  }
+  h1{
+    font-size: 50px;
+  }
+}
+.blur-bg:before {
+  content: "";
+  position: absolute;
+  right:0;
+  width : 100%;
+  min-height: 205px;
+  background: url('/images/pic.png');
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+
+  filter        : blur(10px);
+  -moz-filter   : blur(10px);
+  -webkit-filter: blur(10px);
+  -o-filter     : blur(10px);
+
+  transition        : all 2s linear;
+  -moz-transition   : all 2s linear;
+  -webkit-transition: all 2s linear;
+  -o-transition     : all 2s linear;
+}
+.head-title-container{
+  min-height: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-gallery-pictures{
+  background-size: cover; background-position: center; position: absolute;
+}
+#pic1{
+  @extend .header-gallery-pictures;
+  width: 380px;
+  height: 100px;
+  top: 10px;
+  left: 130px;
+}
+#pic2{
+  @extend .header-gallery-pictures;
+  width: 200px;
+  height: 80px;
+  top: 115px;
+  left: 130px;
+}
+#pic3{
+  @extend .header-gallery-pictures;
+  width: 140px;
+  height: 80px;
+  top: 115px;
+  left: 340px;
+}
+#pic4{
+  @extend .header-gallery-pictures;
+  width: 120px;
+  height: 185px;
+  top: 10px;
+  left: 0;
+}
+#pic5{
+  @extend .header-gallery-pictures;
+  width: 130px;
+  height: 80px;
+  top: 115px;
+  left: 490px;
+}
+#pic6{
+  @extend .header-gallery-pictures;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 520px;
+}
+.contents{
+  background-color: $body-bg;
+  z-index: 3;
+}
