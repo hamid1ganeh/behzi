@@ -9,11 +9,11 @@ Also There is  a separate website with a shared database while that a special ch
 - Work time
 - Chatroom
 
-  # Technologies used:
-  - PHP & Laravel
-  - RESTful API
-  - VueJS
-  - Node.js
-  - Mysql
-  - Eloquent ORM
-  - Queue and Job
+# Technologies used:
+- PHP & Laravel
+- RESTful API
+- VueJS
+- Node.js
+- Mysql
+- Eloquent ORM
+- Queue and Job
